@@ -11,6 +11,8 @@ export const theme = {
     mystic: "#E4EBEF",
     catskillWhite: "#EEF3F6",
     athensGray: "#F9FAFB",
+    white: "#FFFFFF",
+    black: "#000000",
   },
   padding: {
     medium: "12px",
