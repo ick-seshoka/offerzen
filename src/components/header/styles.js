@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import LogoIcon from "@assets/icons/logo-icon.svg";
 
-export const Container = styled.div`
+export const Container = styled.header`
   height: 3.75em;
   background-color: ${({ theme: { colors } }) => colors.oxfordBlue};
 `;
