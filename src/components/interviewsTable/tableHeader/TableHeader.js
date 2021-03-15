@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import { Container, Title, SortIcon } from "./styles";
 
 const TableHeader = ({ TableHeaders }) => {
-  const headers = TableHeaders.map(({ title, sortEnabled }) => {
+  const headers = TableHeaders.map(({ title, sortEnabled, id }) => {
     return (
-      <Title>
+      <Title key={id}>
         {title && title}
         {sortEnabled && <SortIcon />}
       </Title>
@@ -18,11 +18,11 @@ const TableHeader = ({ TableHeaders }) => {
 
 TableHeader.defaultProps = {
   TableHeaders: [
-    { title: "candidate", sortEnabled: false },
-    { title: "role", sortEnabled: false },
-    { title: "last communication", sortEnabled: true },
-    { title: "salary", sortEnabled: false },
-    { title: "sent by", sortEnabled: false },
+    { id: 1, title: "candidate", sortEnabled: false },
+    { id: 2, title: "role", sortEnabled: false },
+    { id: 3, title: "last communication", sortEnabled: true },
+    { id: 4, title: "salary", sortEnabled: false },
+    { id: 5, title: "sent by", sortEnabled: false },
   ],
 };
 
