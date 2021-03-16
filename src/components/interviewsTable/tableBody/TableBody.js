@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { formatNumber } from "@helpers";
+import { formatNumber, formatDate } from "@helpers";
 
 import {
   Container,
@@ -36,7 +36,7 @@ const TableBody = ({ interviews, count }) => {
           <Text>
             {unread && <UnreadIcon status={status} />}
             {description}
-            <Date>{date_time}</Date>
+            <Date>{formatDate(date_time)}</Date>
           </Text>
           <Text>{formatNumber(salary)}</Text>
           <Text>{sent_by}</Text>

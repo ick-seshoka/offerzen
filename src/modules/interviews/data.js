@@ -53,7 +53,7 @@ export const interviews = [
     last_comms: {
       unread: false,
       description: "Lara replied",
-      date_time: "2018-10-093 12:09:51",
+      date_time: "2018-10-03 12:09:51",
     },
     sent_by: "Pieter van der Merwe",
     status: "Declined",
