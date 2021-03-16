@@ -12,13 +12,22 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const SearchInput = styled.input.attrs({ type: "text" })`
+export const SearchInput = styled.input.attrs({
+  type: "text",
+  placeholder: "Search",
+})`
   border: none;
   background: transparent;
   margin-left: 0.3em;
   margin-right: 0.3em;
   outline: none;
   font-size: ${({ theme: { fontSizes } }) => fontSizes.large};
+  font-weight: 600;
+  color: ${({ theme: { colors } }) => colors.grayChateau};
+
+  &::placeholder {
+    color: ${({ theme: { colors } }) => colors.grayChateau};
+  }
 `;
 
 export const SearchIcon = styled.img.attrs({ src: SearchIconSource })`
