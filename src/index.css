@@ -1,5 +1,28 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
 body {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+* {
+  margin: 0;
 }
