@@ -3,16 +3,18 @@ import PropTypes from "prop-types";
 
 import { Container } from "./styles";
 import TableHeader from "./tableHeader";
+import TableBody from "./tableBody";
 
-const InterviewsTable = ({ TableHeaders, data }) => (
+const InterviewsTable = ({ headers, interviews, count }) => (
   <Container>
-    <TableHeader tableHeaders={TableHeaders} />
+    <TableHeader headers={headers} />
+    <TableBody interviews={interviews} />
   </Container>
 );
 
 InterviewsTable.propTypes = {
-  tableHeaders: PropTypes.array.isRequired,
-  data: PropTypes.array.isRequired,
+  headers: PropTypes.array.isRequired,
+  interviews: PropTypes.array.isRequired,
 };
 
 export default InterviewsTable;

@@ -3,7 +3,7 @@ import * as actionTypes from "./actions/actionTypes";
 import { interviews } from "./data";
 
 const initialState = {
-  canditateInterviews: interviews,
+  candidateInterviews: interviews,
 };
 
 export const interviewsReducer = (state = initialState, action) => {

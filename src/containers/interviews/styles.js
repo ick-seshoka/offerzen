@@ -7,7 +7,7 @@ export const Container = styled.main`
 export const ContentWrap = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 75em;
+  max-width: 64em;
   margin: 0 auto;
 `;
 
@@ -18,4 +18,5 @@ export const Count = styled.p`
   padding-bottom: ${({ theme: { padding } }) => padding.small};
   align-self: flex-end;
   font-weight: 600;
+  text-transform: capitalize;
 `;

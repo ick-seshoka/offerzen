@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import {
   Container,
@@ -9,35 +10,49 @@ import {
   Date,
 } from "./styles";
 
-const TableBody = ({ candidates }) => {
-  const candidatesList = candidates.map(
-    ({
-      image,
-      candidate,
-      role,
-      last_comms: { unread, description, date_time },
-      salary,
-      sent_by,
-    }) => {
+const TableBody = ({ interviews, count }) => {
+  const interviewItems = interviews.map(
+    (
+      {
+        image,
+        candidate,
+        role,
+        last_comms: { unread, description, date_time },
+        salary,
+        sent_by,
+        status,
+      },
+      index
+    ) => {
       return (
-        <>
-          <ContentWrap>
+        <ContentWrap key={index} unread={unread}>
+          <Text>
             <Image src={image} alt="candidate profile image" />
-            <Text>{candidate}</Text>
-            <Text>{role}</Text>
-            <Text>
-              {unread && <UnreadIcon />}
-              {description}
-              <Date>{date_time}</Date>
-            </Text>
-            <Text>{salary}</Text>
-            <Text>{sent_by}</Text>
-          </ContentWrap>
-        </>
+            {candidate}
+          </Text>
+          <Text>{role || "-"}</Text>
+          <Text>
+            {unread && <UnreadIcon status={status} />}
+            {description}
+            <Date>{date_time}</Date>
+          </Text>
+          <Text>{salary}</Text>
+          <Text>{sent_by}</Text>
+        </ContentWrap>
       );
     }
   );
-  return <Container>{candidatesList}</Container>;
+  return <Container>{interviewItems}</Container>;
+};
+
+TableBody.defaultProps = {
+  interviews: [],
+  count: 0,
+};
+
+TableBody.propTypes = {
+  interviews: PropTypes.array.isRequired,
+  count: PropTypes.number.isRequired,
 };
 
 export default TableBody;
