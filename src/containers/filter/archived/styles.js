@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Title = styled.p`
   font-size: ${({ theme: { fontSizes } }) => fontSizes.large};
   font-weight: 400;
-  color: ${({ theme: { colors } }) => colors.grayChateau};
+  color: ${({ theme: { colors } }) => colors.jumbo};
   text-transform: capitalize;
 `;
 

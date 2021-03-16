@@ -15,6 +15,7 @@ const InterviewsTable = ({ headers, interviews, count, search }) => (
 InterviewsTable.propTypes = {
   headers: PropTypes.array.isRequired,
   interviews: PropTypes.array.isRequired,
+  count: PropTypes.number,
   search: PropTypes.string,
 };
 

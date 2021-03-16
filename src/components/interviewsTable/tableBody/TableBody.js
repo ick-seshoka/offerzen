@@ -13,6 +13,7 @@ import {
   EmptyRow,
   SearchValue,
   Emoji,
+  Arcvhived,
 } from "./styles";
 
 const TableBody = ({ interviews, count, search }) => {
@@ -26,11 +27,12 @@ const TableBody = ({ interviews, count, search }) => {
         salary,
         sent_by,
         status,
+        archived,
       },
       index
     ) => {
       return (
-        <ContentWrap key={index} unread={unread}>
+        <ContentWrap key={index} unread={unread} archived={archived}>
           <Text>
             <Image src={image} alt="candidate profile image" />
             {candidate}
@@ -43,13 +45,14 @@ const TableBody = ({ interviews, count, search }) => {
           </Text>
           <Text>{formatNumber(salary)}</Text>
           <Text>{sent_by}</Text>
+          <Arcvhived>{archived ? "unarchive" : "archive"}</Arcvhived>
         </ContentWrap>
       );
     }
   );
 
   return interviews.length ? (
-    <Container>{interviewItems}</Container>
+    <Container count={count}>{interviewItems}</Container>
   ) : (
     <EmptyRow>
       <Emoji>😔</Emoji>

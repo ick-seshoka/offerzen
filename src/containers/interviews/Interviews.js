@@ -13,6 +13,7 @@ const Interviews = ({ interviews, count, headers, search }) => (
         interviews={interviews}
         headers={headers}
         search={search}
+        count={count}
       />
     </ContentWrap>
   </Container>

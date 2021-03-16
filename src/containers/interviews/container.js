@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import {
-  getFilteredCandidateInterviews,
+  getCandidateInterviewsWithArchivedStatus,
   getCandidatesCount,
 } from "@modules/interviews";
 import { getFilterSearch } from "@modules/filter";
@@ -10,7 +10,7 @@ import Interviews from "./Interviews";
 
 const mapStateToProps = (state) => {
   return {
-    interviews: getFilteredCandidateInterviews(state),
+    interviews: getCandidateInterviewsWithArchivedStatus(state),
     count: getCandidatesCount(state),
     headers,
     search: getFilterSearch(state),
