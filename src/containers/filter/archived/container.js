@@ -1,7 +1,15 @@
 import { connect } from "react-redux";
 
+import { getArchivedStatus, setArchivedStatus } from "@modules/filter";
+
 import Archived from "./Archived";
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => ({
+  archived: getArchivedStatus(state),
+});
 
-export default connect(mapStateToProps)(Archived);
+const mapDispatchToProps = {
+  setArchivedStatus,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Archived);

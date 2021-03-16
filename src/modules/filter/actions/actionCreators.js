@@ -6,3 +6,7 @@ export const setSearchFilterValue = (value) => {
     payload: { search: value },
   };
 };
+
+export const setArchivedStatus = (archived) => {
+  return { type: actionTypes.SET_ARCHIVED_STATUS, payload: { archived } };
+};

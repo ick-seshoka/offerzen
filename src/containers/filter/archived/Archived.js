@@ -9,22 +9,30 @@ import {
   InactiveCheckbox,
 } from "./styles";
 
-const Archived = ({ active }) => (
-  <Container>
-    <Title>show archived</Title>
-    <Checkbox>
-      {!active && <InactiveCheckbox />}
-      {active && <ActiveCheckbox />}
-    </Checkbox>
-  </Container>
-);
+const Archived = ({ archived, setArchivedStatus }) => {
+  const handleClick = () => {
+    setArchivedStatus(!archived);
+  };
+
+  return (
+    <Container>
+      <Title>show archived</Title>
+      <Checkbox onClick={handleClick}>
+        {!archived && <InactiveCheckbox />}
+        {archived && <ActiveCheckbox />}
+      </Checkbox>
+    </Container>
+  );
+};
 
 Archived.defaultProps = {
-  active: false,
+  archived: false,
+  setArchivedStatus: () => {},
 };
 
 Archived.propTypes = {
-  active: PropTypes.bool.isRequired,
+  archived: PropTypes.bool.isRequired,
+  setArchivedStatus: PropTypes.func.isRequired,
 };
 
 export default Archived;
