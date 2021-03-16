@@ -1,10 +1,31 @@
 import styled from "styled-components";
 
+import EmojiSource from "@components/emoji";
+
 import { interviewStatus } from "@enums";
 
 export const Container = styled.div`
   display: grid;
   grid-template-rows: repeat(${({ count = 5 }) => count}, auto);
+`;
+
+export const EmptyRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: ${({ theme: { colors } }) => colors.white};
+  padding: ${({ theme: { padding } }) => padding.medium};
+  font-weight: 600;
+  font-size: ${({ theme: { fontSizes } }) => fontSizes.medium};
+  justify-content: center;
+  color: ${({ theme: { colors } }) => colors.grayChateau};
+`;
+
+export const SearchValue = styled.strong`
+  padding-left: ${({ theme: { padding } }) => padding.small};
+`;
+
+export const Emoji = styled(EmojiSource)`
+  padding-right: ${({ theme: { padding } }) => padding.small};
 `;
 
 export const ContentWrap = styled.div`

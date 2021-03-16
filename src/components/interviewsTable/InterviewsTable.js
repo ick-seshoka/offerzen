@@ -5,16 +5,17 @@ import { Container } from "./styles";
 import TableHeader from "./tableHeader";
 import TableBody from "./tableBody";
 
-const InterviewsTable = ({ headers, interviews, count }) => (
+const InterviewsTable = ({ headers, interviews, count, search }) => (
   <Container>
     <TableHeader headers={headers} />
-    <TableBody interviews={interviews} />
+    <TableBody interviews={interviews} search={search} />
   </Container>
 );
 
 InterviewsTable.propTypes = {
   headers: PropTypes.array.isRequired,
   interviews: PropTypes.array.isRequired,
+  search: PropTypes.string,
 };
 
 export default InterviewsTable;
