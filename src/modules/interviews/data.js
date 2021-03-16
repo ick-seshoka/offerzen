@@ -1,5 +1,6 @@
 export const interviews = [
   {
+    id: 1,
     image:
       "https://www.filepicker.io/api/file/zpPP5saTlywu9rYeGd1g/convert?fit=crop&h=200&w=200",
     candidate: "Jaco du Toit",
@@ -15,6 +16,7 @@ export const interviews = [
     archived: false,
   },
   {
+    id: 2,
     image:
       "https://www.filepicker.io/api/file/a46tKdb2RTS0hUbOeGjw/convert?fit=crop&h=200&w=200",
     candidate: "Gys Muller",
@@ -30,6 +32,7 @@ export const interviews = [
     archived: false,
   },
   {
+    id: 3,
     image:
       "https://www.filepicker.io/api/file/fCT91jHRvWb7KHEa4ZoY/convert?fit=crop&h=200&w=200",
     candidate: "Philip Joubert",
@@ -45,6 +48,7 @@ export const interviews = [
     archived: true,
   },
   {
+    id: 4,
     image:
       "https://www.filepicker.io/api/file/MzoNGuE4QKCy0WiNklIK/convert?fit=crop&h=200&w=200",
     candidate: "Lara Morris",
@@ -60,6 +64,7 @@ export const interviews = [
     archived: false,
   },
   {
+    id: 5,
     image:
       "https://www.filepicker.io/api/file/MzoNGuE4QKCy0WiNklIK/convert?fit=crop&h=200&w=200",
     candidate: "Marike Brown",
@@ -75,6 +80,7 @@ export const interviews = [
     archived: false,
   },
   {
+    id: 6,
     image:
       "https://www.filepicker.io/api/file/MzoNGuE4QKCy0WiNklIK/convert?fit=crop&h=200&w=200",
     candidate: "Laura Manzur",
@@ -90,6 +96,7 @@ export const interviews = [
     archived: true,
   },
   {
+    id: 7,
     image:
       "https://www.filepicker.io/api/file/VHvCl3g2TaKr9XZcs4zH/convert?fit=crop&h=200&w=200",
     candidate: "Peter Scott",

@@ -1,6 +1,7 @@
 import { createSelector } from "reselect";
 
 import { getFilterSearch, getArchivedStatus } from "@modules/filter";
+import { interviews } from "./data";
 
 export const getCandidateInterviews = (state) =>
   state.interviews?.candidateInterviews;
@@ -30,5 +31,9 @@ export const getFilteredCandidateInterviews = createSelector(
   }
 );
 
-export const getCandidatesCount = (state) =>
-  state.interviews?.candidateInterviews?.length;
+export const getCandidatesCount = createSelector(
+  getFilteredCandidateInterviews,
+  (interviews) => {
+    return interviews?.length;
+  }
+);

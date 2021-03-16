@@ -16,23 +16,35 @@ import {
   Arcvhived,
 } from "./styles";
 
-const TableBody = ({ interviews, count, search }) => {
+const TableBody = ({
+  interviews,
+  search,
+  setCandidateArchivedStatusActive,
+  setCandidateArchivedStatusInactive,
+  count,
+}) => {
+  const handleClickArchive = (id) => () => {
+    setCandidateArchivedStatusActive(id);
+  };
+
+  const handleClickUnarchive = (id) => () => {
+    setCandidateArchivedStatusInactive(id);
+  };
+
   const interviewItems = interviews.map(
-    (
-      {
-        image,
-        candidate,
-        role,
-        last_comms: { unread, description, date_time },
-        salary,
-        sent_by,
-        status,
-        archived,
-      },
-      index
-    ) => {
+    ({
+      id,
+      image,
+      candidate,
+      role,
+      last_comms: { unread, description, date_time },
+      salary,
+      sent_by,
+      status,
+      archived,
+    }) => {
       return (
-        <ContentWrap key={index} unread={unread} archived={archived}>
+        <ContentWrap key={id} unread={unread} archived={archived}>
           <Text>
             <Image src={image} alt="candidate profile image" />
             {candidate}
@@ -45,7 +57,13 @@ const TableBody = ({ interviews, count, search }) => {
           </Text>
           <Text>{formatNumber(salary)}</Text>
           <Text>{sent_by}</Text>
-          <Arcvhived>{archived ? "unarchive" : "archive"}</Arcvhived>
+          <Arcvhived
+            onClick={
+              archived ? handleClickUnarchive(id) : handleClickArchive(id)
+            }
+          >
+            {archived ? "unarchive" : "archive"}
+          </Arcvhived>
         </ContentWrap>
       );
     }
@@ -66,12 +84,14 @@ TableBody.defaultProps = {
   interviews: [],
   count: 0,
   search: "",
+  setCandidateArchivedStatus: () => {},
 };
 
 TableBody.propTypes = {
   interviews: PropTypes.array.isRequired,
   count: PropTypes.number.isRequired,
   search: PropTypes.string,
+  setCandidateArchivedStatus: PropTypes.func.isRequired,
 };
 
 export default TableBody;

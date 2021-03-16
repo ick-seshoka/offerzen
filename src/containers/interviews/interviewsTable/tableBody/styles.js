@@ -83,4 +83,5 @@ export const Arcvhived = styled.p`
   color: ${({ theme: { colors } }) => colors.scooter};
   text-transform: capitalize;
   justify-content: flex-end;
+  cursor: pointer;
 `;
