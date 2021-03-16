@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { formatNumber } from "@helpers";
+
 import {
   Container,
   ContentWrap,
@@ -36,7 +38,7 @@ const TableBody = ({ interviews, count }) => {
             {description}
             <Date>{date_time}</Date>
           </Text>
-          <Text>{salary}</Text>
+          <Text>{formatNumber(salary)}</Text>
           <Text>{sent_by}</Text>
         </ContentWrap>
       );
