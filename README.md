@@ -2,7 +2,7 @@
 
 This project is created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
 
-### Folders are structure in the following way
+### Folders are structured in the following way
 
 - **🌎 public**
   - public folder with `index.html` file
@@ -32,16 +32,16 @@ This project is created using [create-react-app](https://reactjs.org/docs/create
 
 Download/clone the source code from this [github repository](https://github.com/ick-seshoka/offerzen/tree/master)
 
-run the following command in to install and run the project locally:
+run the following commands to install and run the project locally:
 
 ```
   npm install
   npm start
 ```
 
-The browser should launch the appication on this urls `localhost:3000`
+The browser should launch on this urls `localhost:3000`
 
-provided you are inside the project home director (cd `/offerzen` after downloading)
+provided you are inside the project home directory (cd `/offerzen` after downloading)
 
 ### You need to have [Node.js](https://nodejs.dev/) installed on your machine with npm ℹ️
 
@@ -66,7 +66,7 @@ The repository has task-a, task-b, and task c and the final solution in develop 
 
 # 💬 My comments about the assessment
 
-- It took longer than 4hours for me to complete this prject. i spent most of the time filling out the branks on the uncovred sstate screens in the designs, like what to show when searching a user that does not exisist.
+- It took longer than 4hours for me to complete this prject. I spent most of the time filling out the branks on the uncovred state screens in the designs, like what to show when searching a user that does not exisist.
 
 - I would've liked to get the actual design file and save time on generating the icon svgs ☹️
 
