@@ -39,10 +39,33 @@ run the following command in to install and run the project locally:
   npm start
 ```
 
-The browser should launch the appication on this urls `localhost:300`
+The browser should launch the appication on this urls `localhost:3000`
 
 provided you are inside the project home director (cd `/offerzen` after downloading)
 
 ### You need to have [Node.js](https://nodejs.dev/) installed on your machine with npm ℹ️
 
-You can also view the project live on [here](https://ick-seshoka.github.io/offerzen/#/) 😁, i created a gh-page of the final solution
+You can also view the project live on [here](https://ick-seshoka.github.io/offerzen/#/) 😁, I created a gh-page of the final solution
+
+# Solutions structure
+
+The repository has task-a, task-b, and task c and the final solution in develop and maaster brnach
+
+### Packages used in the project
+
+- [axios](https://www.npmjs.com/package/axios)
+- [moment](https://www.npmjs.com/package/moment)
+- [normalize](thttps://www.npmjs.com/package/normalize.css)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [redux](https://www.npmjs.com/package/redux)
+- [redux-immutable-state-invarient](https://www.npmjs.com/package/redux-immutable-state-invarient)
+- [redux-thunk](tehttps://www.npmjs.com/package/redux-thunk)
+- [reselect](https://www.npmjs.com/package/reselect)
+- [styled-components](https://www.npmjs.com/package/styled-components)
+
+# 💬 My comments about the assessment
+
+- It took longer than 4hours for me to complete this prject. i spent most of the time filling out the branks on the uncovred sstate screens in the designs, like what to show when searching a user that does not exisist.
+
+- I would've liked to get the actual design file and save time on generating the icon svgs
