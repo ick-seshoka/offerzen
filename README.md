@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Project structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
 
-## Available Scripts
+### Folders are structured in the following way
 
-In the project directory, you can run:
+- **🌎 public**
+  - public folder with `index.html` file
+- **🎯 src**
+  - The magic folder 🧙🏾‍♂️ : logic of the application
+  - **src folder structure**
+    - **🚀 api**
+      - axios configuration object passed to axios instance to make the call to get candidate interviews hosted on this [public project](https://github.com/ick-seshoka/offerzen-data)
+    - **📂 assest**
+      - project resources like images and icons
+    - **📦 components**
+      - `dumb` components
+    - **📕 containers**
+      - `smart` components
+    - **🚦 enums**
+      - helper enums
+    - **🤺 helpers**
+      - ninjas of the project: helper functions, formatters
+    - **📄 pages**
+      - project pages : containers that group components that make up a 'page' in a SPA 🤭🤣
+    - **🏬 store**
+      - redux store configuration
+    - **🎨 styles**
+      - project theme, passed to styled components `<ThemeProvider>` component
 
-### `npm start`
+# How to install source code
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Download/clone the source code from this [github repository](https://github.com/ick-seshoka/offerzen/tree/master)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+run the following commands to install and run the project locally:
 
-### `npm test`
+```
+  npm install
+  npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The browser should launch on this urls `localhost:3000`
 
-### `npm run build`
+provided you are inside the project home directory (cd `/offerzen` after downloading)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### You need to have [Node.js](https://nodejs.dev/) installed on your machine with npm ℹ️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can also view the project live on [here](https://ick-seshoka.github.io/offerzen/#/) 😁, I created a gh-page of the final solution
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Solutions structure
 
-### `npm run eject`
+The repository has task-a, task-b, and task c and the final solution in develop and maaster brnach
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Packages used in the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [axios](https://www.npmjs.com/package/axios)
+- [moment](https://www.npmjs.com/package/moment)
+- [normalize](https://www.npmjs.com/package/normalize)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [redux](https://www.npmjs.com/package/redux)
+- [redux-immutable-state-invarient](https://www.npmjs.com/package/redux-immutable-state-invarient)
+- [redux-thunk](https://www.npmjs.com/package/redux-thunk)
+- [reselect](https://www.npmjs.com/package/reselect)
+- [styled-components](https://www.npmjs.com/package/styled-components)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 💬 My comments about the assessment
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- It took longer than 4hours for me to complete this prject. I spent most of the time filling out the branks on the uncovred state screens in the designs, like what to show when searching a user that does not exisist.
 
-## Learn More
+- I would've liked to get the actual design file and save time on generating the icon svgs ☹️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All in all it was a really fun exercises to have I leanrt how to center content in a container with padding from this project lol, nisfty trick 💡
