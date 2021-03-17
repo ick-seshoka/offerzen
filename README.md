@@ -1,6 +1,6 @@
 # Project structure
 
-This project is created using [create-react-app]
+This project is created using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
 
 ### Folders are structure in the following way
 
@@ -10,7 +10,7 @@ This project is created using [create-react-app]
   - The magic folder 🧙🏾‍♂️ : logic of the application
   - **src folder structure**
     - **🚀 api**
-      - axios configuration object passed to axios instance to make the call to get candidate interviews hosted on this public project
+      - axios configuration object passed to axios instance to make the call to get candidate interviews hosted on this [public project](https://github.com/ick-seshoka/offerzen-data)
     - **📂 assest**
       - project resources like images and icons
     - **📦 components**
