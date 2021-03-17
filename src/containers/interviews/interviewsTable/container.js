@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 
 import {
-  getCandidateInterviews,
+  getFilteredCandidateInterviews,
   getCandidatesCount,
 } from "@modules/interviews";
 
@@ -10,7 +10,7 @@ import { headers } from "@modules/interviews";
 import InterviewsTable from "./InterviewsTable";
 
 const mapStateToProps = (state) => ({
-  interviews: getCandidateInterviews(state),
+  interviews: getFilteredCandidateInterviews(state),
   count: getCandidatesCount(state),
   headers,
 });
