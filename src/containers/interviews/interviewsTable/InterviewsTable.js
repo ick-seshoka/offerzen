@@ -8,19 +8,19 @@ import TableBody from "./tableBody";
 const InterviewsTable = ({
   headers,
   interviews,
-  count,
   search,
-  setCandidateArchivedStatusInactive,
+  count,
   setCandidateArchivedStatusActive,
+  setCandidateArchivedStatusInactive,
 }) => (
   <Container>
     <TableHeader headers={headers} />
     <TableBody
       interviews={interviews}
       search={search}
-      count={count}
       setCandidateArchivedStatusActive={setCandidateArchivedStatusActive}
       setCandidateArchivedStatusInactive={setCandidateArchivedStatusInactive}
+      count={count}
     />
   </Container>
 );
@@ -31,6 +31,7 @@ InterviewsTable.propTypes = {
   search: PropTypes.string,
   setCandidateArchivedStatusActive: PropTypes.func.isRequired,
   setCandidateArchivedStatusInactive: PropTypes.func.isRequired,
+  count: PropTypes.number,
 };
 
 export default InterviewsTable;
