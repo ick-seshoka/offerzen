@@ -55,12 +55,12 @@ The repository has task-a, task-b, and task c and the final solution in develop 
 
 - [axios](https://www.npmjs.com/package/axios)
 - [moment](https://www.npmjs.com/package/moment)
-- [normalize](thttps://www.npmjs.com/package/normalize.css)
+- [normalize](ttps://www.npmjs.com/package/normalize)
 - [prop-types](https://www.npmjs.com/package/prop-types)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [redux](https://www.npmjs.com/package/redux)
 - [redux-immutable-state-invarient](https://www.npmjs.com/package/redux-immutable-state-invarient)
-- [redux-thunk](tehttps://www.npmjs.com/package/redux-thunk)
+- [redux-thunk](https://www.npmjs.com/package/redux-thunk)
 - [reselect](https://www.npmjs.com/package/reselect)
 - [styled-components](https://www.npmjs.com/package/styled-components)
 
@@ -68,4 +68,6 @@ The repository has task-a, task-b, and task c and the final solution in develop 
 
 - It took longer than 4hours for me to complete this prject. i spent most of the time filling out the branks on the uncovred sstate screens in the designs, like what to show when searching a user that does not exisist.
 
-- I would've liked to get the actual design file and save time on generating the icon svgs
+- I would've liked to get the actual design file and save time on generating the icon svgs ☹️
+
+- All in all it was a really func exercises to have i leanrt how to center content in a conder with padding from this project lol 💡
