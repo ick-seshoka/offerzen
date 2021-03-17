@@ -1,27 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import InterviewsTable from "@components/interviewsTable";
+import InterviewsTable from "./interviewsTable";
 
 import { Container, ContentWrap, Count } from "./styles";
 
-const Interviews = ({ interviews, count, headers }) => (
+const Interviews = ({ count }) => (
   <Container>
     <ContentWrap>
       <Count>{count} interview requests</Count>
-      <InterviewsTable interviews={interviews} headers={headers} />
+      <InterviewsTable />
     </ContentWrap>
   </Container>
 );
 
 Interviews.defaultProps = {
-  interviews: [],
   count: 0,
-  headers: [],
 };
 
 Interviews.propTypes = {
-  interviews: PropTypes.array.isRequired,
   count: PropTypes.number.isRequired,
 };
 
