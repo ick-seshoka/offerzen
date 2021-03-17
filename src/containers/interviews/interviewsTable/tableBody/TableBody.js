@@ -74,7 +74,8 @@ const TableBody = ({
   ) : (
     <EmptyRow>
       <Emoji>😔</Emoji>
-      we don't seem to have a candidate with name{" "}
+      we don't seem to have a candidate with name{search}
+
       <SearchValue>{search}</SearchValue>
     </EmptyRow>
   );

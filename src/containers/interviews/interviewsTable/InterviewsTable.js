@@ -28,7 +28,6 @@ const InterviewsTable = ({
 InterviewsTable.propTypes = {
   headers: PropTypes.array.isRequired,
   interviews: PropTypes.array.isRequired,
-  count: PropTypes.number,
   search: PropTypes.string,
   setCandidateArchivedStatusActive: PropTypes.func.isRequired,
   setCandidateArchivedStatusInactive: PropTypes.func.isRequired,
