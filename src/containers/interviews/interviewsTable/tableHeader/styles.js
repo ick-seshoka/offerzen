@@ -4,7 +4,7 @@ import SortIconSource from "@assets/icons/sort-icon.svg";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 13em 12.375em 17.0625em 8.625em 7.8125em;
+  grid-template-columns: 13em 12.375em 17.0625em 8.625em 7.8125em auto;
   background-color: ${({ theme: { colors } }) => colors.athensGray};
   padding: ${({ theme: { padding } }) => padding.medium};
 `;

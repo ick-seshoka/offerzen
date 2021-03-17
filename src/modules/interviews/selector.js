@@ -1,12 +1,24 @@
 import { createSelector } from "reselect";
 
-import { getFilterSearch } from "@modules/filter";
+import { getFilterSearch, getArchivedStatus } from "@modules/filter";
+import { interviews } from "./data";
 
 export const getCandidateInterviews = (state) =>
   state.interviews?.candidateInterviews;
 
-export const getFilteredCandidateInterviews = createSelector(
+export const getCandidateInterviewsWithArchivedStatus = createSelector(
   getCandidateInterviews,
+  getArchivedStatus,
+  (interviews, archived) => {
+    if (!archived) {
+      return interviews.filter(({ archived }) => !archived);
+    }
+    return interviews;
+  }
+);
+
+export const getFilteredCandidateInterviews = createSelector(
+  getCandidateInterviewsWithArchivedStatus,
   getFilterSearch,
   (interviews, search) => {
     if (search !== "") {
@@ -19,5 +31,14 @@ export const getFilteredCandidateInterviews = createSelector(
   }
 );
 
-export const getCandidatesCount = (state) =>
-  state.interviews?.candidateInterviews?.length;
+export const getCandidatesCount = createSelector(
+  getFilteredCandidateInterviews,
+  (interviews) => {
+    return interviews?.length;
+  }
+);
+
+export const getCandidateInterviewsLoading = (state) =>
+  state.interviews?.loading;
+
+export const getCandidateInterviewsError = (state) => state.interviews?.error;

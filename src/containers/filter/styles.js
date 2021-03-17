@@ -9,7 +9,7 @@ export const ContentWrap = styled.div`
   display: grid;
   grid-template-columns: fit-content(12.5em) 1fr;
   align-content: center;
-  max-width: 64em;
+  max-width: 67em;
   margin: 0 auto;
   height: 3.75em;
 `;

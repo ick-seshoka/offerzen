@@ -7,3 +7,11 @@ export const setSearchFilterValue = (search) => async (dispatch) => {
     console.log("something went wrong while searching");
   }
 };
+
+export const setArchivedStatus = (archived) => async (dispatch) => {
+  try {
+    dispatch(actions.setArchivedStatus(archived));
+  } catch (error) {
+    console.log("something went wrong while filtering archived status");
+  }
+};

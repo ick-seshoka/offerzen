@@ -13,6 +13,7 @@ module.exports = {
       "@store": path.resolve(__dirname, "./src/store"),
       "@modules": path.resolve(__dirname, "./src/modules"),
       "@enums": path.resolve(__dirname, "./src/enums"),
+      "@api": path.resolve(__dirname, "./src/api"),
     },
   },
 };
