@@ -1,9 +1,9 @@
 import * as actionTypes from "./actions/actionTypes";
 
-import { interviews } from "./data";
-
 const initialState = {
-  candidateInterviews: interviews,
+  candidateInterviews: [],
+  loading: true,
+  error: null,
 };
 
 export const interviewsReducer = (state = initialState, action) => {
@@ -13,7 +13,63 @@ export const interviewsReducer = (state = initialState, action) => {
         payload: { interviews },
       } = action;
 
-      return { ...state, interviews };
+      return { ...state, candidateInterviews: interviews };
+    }
+
+    case actionTypes.SET_CANDIDATE_ARCHIVED_STATUS_ACTIVE: {
+      const {
+        payload: { id },
+      } = action;
+      const { candidateInterviews } = state;
+
+      const interviews = candidateInterviews.map((candidate) => {
+        if (candidate.id === id) {
+          return { ...candidate, archived: true };
+        }
+
+        return candidate;
+      });
+
+      return { ...state, candidateInterviews: interviews };
+    }
+
+    case actionTypes.SET_CANDIDATE_ARCHIVED_STATUS_INACTIVE: {
+      const {
+        payload: { id },
+      } = action;
+      const { candidateInterviews } = state;
+
+      const interviews = candidateInterviews.map((candidate) => {
+        if (candidate.id === id) {
+          return { ...candidate, archived: false };
+        }
+
+        return candidate;
+      });
+
+      return { ...state, candidateInterviews: interviews };
+    }
+
+    case actionTypes.SET_CANDIDATE_INTERVIEWS_LOADING: {
+      const {
+        payload: { loading },
+      } = action;
+
+      return {
+        ...state,
+        loading,
+      };
+    }
+
+    case actionTypes.SET_CANDIDATE_ARCHIVED_STATUS_ERROR: {
+      const {
+        payload: { error },
+      } = action;
+
+      return {
+        ...state,
+        error: error,
+      };
     }
 
     default:

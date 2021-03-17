@@ -14,6 +14,7 @@ export const theme = {
     black: "#000000",
     strokeBlue: "#F7FAFB",
     unreadGray: "#D8D8D8",
+    iconStroke: "#DBE1E5",
   },
   padding: {
     medium: "12px",

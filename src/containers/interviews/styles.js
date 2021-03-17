@@ -7,7 +7,7 @@ export const Container = styled.main`
 export const ContentWrap = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 64em;
+  max-width: 67em;
   margin: 0 auto;
 `;
 
