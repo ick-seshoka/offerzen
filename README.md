@@ -27,3 +27,22 @@ This project is created using [create-react-app](https://reactjs.org/docs/create
       - redux store configuration
     - **🎨 styles**
       - project theme, passed to styled components `<ThemeProvider>` component
+
+# How to install source code
+
+Download/clone the source code from this [github repository](https://github.com/ick-seshoka/offerzen/tree/master)
+
+run the following command in to install and run the project locally:
+
+```
+  npm install
+  npm start
+```
+
+The browser should launch the appication on this urls `localhost:300`
+
+provided you are inside the project home director (cd `/offerzen` after downloading)
+
+### You need to have [Node.js](https://nodejs.dev/) installed on your machine with npm ℹ️
+
+You can also voew the project live on [here](https://ick-seshoka.github.io/offerzen/#/) 😁, i created a gh-page of the final solution
