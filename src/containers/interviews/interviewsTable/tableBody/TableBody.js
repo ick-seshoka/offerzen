@@ -30,7 +30,7 @@ const TableBody = ({ interviews, count, search }) => {
       index
     ) => {
       return (
-        <ContentWrap key={index} unread={unread}>
+        <ContentWrap key={index} unread={unread} count={count}>
           <Text>
             <Image src={image} alt="candidate profile image" />
             {candidate}
@@ -53,7 +53,7 @@ const TableBody = ({ interviews, count, search }) => {
   ) : (
     <EmptyRow>
       <Emoji>😔</Emoji>
-      we don't seem to have a candidate with name{" "}
+      we don't seem to have a candidate with name{search}
       <SearchValue>{search}</SearchValue>
     </EmptyRow>
   );
