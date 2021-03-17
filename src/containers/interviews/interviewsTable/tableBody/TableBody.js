@@ -44,7 +44,11 @@ const TableBody = ({
       archived,
     }) => {
       return (
+<<<<<<< HEAD:src/containers/interviews/interviewsTable/tableBody/TableBody.js
         <ContentWrap key={id} unread={unread} archived={archived}>
+=======
+        <ContentWrap key={index} unread={unread} count={count}>
+>>>>>>> feature/task-b:src/containers/interviews/interviewsTable/tableBody/TableBody.js
           <Text>
             <Image src={image} alt="candidate profile image" />
             {candidate}
@@ -74,7 +78,7 @@ const TableBody = ({
   ) : (
     <EmptyRow>
       <Emoji>😔</Emoji>
-      we don't seem to have a candidate with name{" "}
+      we don't seem to have a candidate with name{search}
       <SearchValue>{search}</SearchValue>
     </EmptyRow>
   );
