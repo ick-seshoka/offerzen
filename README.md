@@ -55,7 +55,7 @@ The repository has task-a, task-b, and task c and the final solution in develop 
 
 - [axios](https://www.npmjs.com/package/axios)
 - [moment](https://www.npmjs.com/package/moment)
-- [normalize](ttps://www.npmjs.com/package/normalize)
+- [normalize](https://www.npmjs.com/package/normalize)
 - [prop-types](https://www.npmjs.com/package/prop-types)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [redux](https://www.npmjs.com/package/redux)
