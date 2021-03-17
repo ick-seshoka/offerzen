@@ -70,4 +70,4 @@ The repository has task-a, task-b, and task c and the final solution in develop 
 
 - I would've liked to get the actual design file and save time on generating the icon svgs ☹️
 
-- All in all it was a really func exercises to have i leanrt how to center content in a conder with padding from this project lol 💡
+- All in all it was a really fun exercises to have I leanrt how to center content in a container with padding from this project lol, nisfty trick 💡
