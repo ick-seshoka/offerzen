@@ -45,4 +45,4 @@ provided you are inside the project home director (cd `/offerzen` after download
 
 ### You need to have [Node.js](https://nodejs.dev/) installed on your machine with npm ℹ️
 
-You can also voew the project live on [here](https://ick-seshoka.github.io/offerzen/#/) 😁, i created a gh-page of the final solution
+You can also view the project live on [here](https://ick-seshoka.github.io/offerzen/#/) 😁, i created a gh-page of the final solution
