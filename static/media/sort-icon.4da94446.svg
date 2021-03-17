@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="10px" viewBox="0 0 7 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Sort icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-4285.000000, -815.000000)" fill="#343950">
+            <g id="Sort-icon" transform="translate(4285.000000, 815.000000)">
+                <polygon id="Down-triangle" transform="translate(3.500000, 8.000000) scale(1, -1) translate(-3.500000, -8.000000) " points="3.5 6 7 10 0 10"></polygon>
+                <polygon id="Up-triangle" points="3.5 0 7 4 0 4"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-4687.000000, -737.000000)" stroke="#40AADB">
+            <g id="Checkbox" transform="translate(4688.000000, 738.000000)">
+                <g id="Active" transform="translate(0.000000, 0.000000)">
+                    <rect id="Background" fill="#D9EEF8" x="0" y="0" width="20" height="20" rx="3"></rect>
+                    <polyline id="Check" stroke-width="1.4" points="4 10.0537703 7.92428845 13.8366345 15.3453257 6"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
