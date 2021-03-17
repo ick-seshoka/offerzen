@@ -4,12 +4,12 @@ This project is created using [create-react-app]
 
 ### Folders are structure in the following way
 
-- **🌎public**
+- **🌎 public**
   - public folder with `index.html` file
-- **🎯src**
+- **🎯 src**
   - The magic folder 🧙🏾‍♂️ : logic of the application
   - **src folder structure**
-    - **🚀api**
+    - **🚀 api**
       - axios configaration object passed to axios instance to make the call to get candidate interviews hosted on this public project
-    - **📂assest**
+    - **📂 assest**
       - project resources like images and icons
