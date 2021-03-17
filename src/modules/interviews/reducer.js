@@ -24,7 +24,7 @@ export const interviewsReducer = (state = initialState, action) => {
 
       const interviews = candidateInterviews.map((candidate) => {
         if (candidate.id === id) {
-          candidate.archived = true;
+          return { ...candidate, archived: true };
         }
 
         return candidate;
@@ -41,7 +41,7 @@ export const interviewsReducer = (state = initialState, action) => {
 
       const interviews = candidateInterviews.map((candidate) => {
         if (candidate.id === id) {
-          candidate.archived = false;
+          return { ...candidate, archived: false };
         }
 
         return candidate;
