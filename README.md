@@ -32,6 +32,8 @@ This project is created using [create-react-app](https://reactjs.org/docs/create
 
 Download/clone the source code from this [github repository](https://github.com/ick-seshoka/offerzen/tree/master)
 
+add a `.env` file with the following inside: `REACT_APP_CANDIDATE_INTERVIEWS_URL = 'https://raw.githubusercontent.com/ick-seshoka/offerzen-data/master/interviews.json'` at the root of the project
+
 run the following commands to install and run the project locally:
 
 ```
