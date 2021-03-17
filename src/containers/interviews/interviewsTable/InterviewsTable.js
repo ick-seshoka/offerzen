@@ -33,6 +33,7 @@ InterviewsTable.propTypes = {
   setCandidateArchivedStatusActive: PropTypes.func.isRequired,
   setCandidateArchivedStatusInactive: PropTypes.func.isRequired,
   count: PropTypes.number,
+
 };
 
 export default InterviewsTable;
