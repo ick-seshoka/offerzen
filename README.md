@@ -7,4 +7,8 @@ This project is created using [create-react-app]
 - **public**
   - public folder with `index.html` file
 - **src**
-  - the magic folder 🧙🏾‍♂️ : logic of the application
+  - The magic folder 🧙🏾‍♂️ : logic of the application
+  -
+  - **src folder structure##**
+    - **api**
+      - axios configaration object passed to axios instance to make the call to get candidate interviews hosted on this public project
