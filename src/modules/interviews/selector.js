@@ -37,3 +37,8 @@ export const getCandidatesCount = createSelector(
     return interviews?.length;
   }
 );
+
+export const getCandidateInterviewsLoading = (state) =>
+  state.interviews?.loading;
+
+export const getCandidateInterviewsError = (state) => state.interviews?.error;

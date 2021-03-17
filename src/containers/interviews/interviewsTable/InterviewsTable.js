@@ -30,7 +30,8 @@ InterviewsTable.propTypes = {
   interviews: PropTypes.array.isRequired,
   count: PropTypes.number,
   search: PropTypes.string,
-  setCandidateArchivedStatus: PropTypes.func.isRequired,
+  setCandidateArchivedStatusActive: PropTypes.func.isRequired,
+  setCandidateArchivedStatusInactive: PropTypes.func.isRequired,
   count: PropTypes.number,
 };
 
