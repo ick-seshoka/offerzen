@@ -4,5 +4,7 @@ This project is created using [create-react-app]
 
 ### Folders are structure in the following way
 
-- Public
+- **public**
   - public folder with `index.html` file
+- **src**
+  - the magic folder 🧙🏾‍♂️ : logic of the application
